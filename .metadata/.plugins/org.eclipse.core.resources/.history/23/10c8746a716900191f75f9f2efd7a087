@@ -1,0 +1,8 @@
+package com.kiran.di;
+
+public class Circle {
+
+	public void draw() {
+		System.out.println("Drawing shape");
+	}
+}

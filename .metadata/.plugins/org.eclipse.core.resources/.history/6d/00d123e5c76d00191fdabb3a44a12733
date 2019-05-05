@@ -1,0 +1,3 @@
+log.level.org.springframework=debug
+pointA.pointX=0
+pointA.pointY=0

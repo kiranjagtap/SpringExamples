@@ -1,0 +1,15 @@
+package com.kiran.di;
+
+public class Main {
+
+	public static void drawShape(Shape shape){
+		shape.draw();
+	}
+	public static void main(String[] args) {
+		DrawingClass drawingClass = new DrawingClass();
+		drawingClass.setShape(new Triangle());
+		drawingClass.drawShapes();
+		
+	}
+
+}

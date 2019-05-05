@@ -1,0 +1,37 @@
+package com.kiran.di;
+
+import java.util.List;
+import java.util.function.Consumer;
+
+public class Triangle implements Shape{
+	
+	List<Point> points;
+	
+	
+	public List<Point> getPoints() {
+		return points;
+	}
+
+
+	public void setPoints(List<Point> points) {
+		this.points = points;
+	}
+
+	public void draw() {
+		points.forEach(new Consumer<Point>(){
+					
+					@Override
+					public void accept(Point point) {
+						System.out.println("PointA"+"("+point.getX()+","+point.getY()+")");
+					}									
+		});
+	}
+
+	
+	/*public void draw() {
+		System.out.println("PointA"+"("+getPointA().getX()+","+getPointA().getY()+")");
+		System.out.println("PointB"+"("+getPointB().getX()+","+getPointB().getY()+")");
+		System.out.println("PointC"+"("+getPointC().getX()+","+getPointC().getY()+")");
+		
+	}*/
+}

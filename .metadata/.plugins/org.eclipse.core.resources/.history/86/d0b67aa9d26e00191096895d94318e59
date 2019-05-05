@@ -1,0 +1,18 @@
+package com.sort.algorithm;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class BinarySearchImpl {
+
+	@Autowired
+	SortAlgorithm sortAlgorithm;
+	
+	public int binarySearch(int[] numbers, int numberToSearch ) {
+		
+		int[] sortedNumbers = bubbleSortAlgorithm.sort(numbers);
+		
+		return 3;
+	}
+}

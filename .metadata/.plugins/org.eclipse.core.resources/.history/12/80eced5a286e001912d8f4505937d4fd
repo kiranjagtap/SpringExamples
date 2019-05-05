@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<bean id="triangle" class="com.kiran.di.Triangle">
+
+		<!-- <constructor-arg type="String" value="Equilateral"></constructor-arg>
+ -->
+
+		<property name="points">
+			<list>
+				<ref bean="pointA" />
+				<ref bean="pointB" />
+				<ref bean="pointC" />
+			</list>
+		</property>
+		
+		
+		
+		<!-- <constructor-arg type="int" value="10"></constructor-arg> -->
+		<!-- <property name="type" value="Right angle" /> <property name="pointA" 
+			ref="pointA"></property> <property name="pointB" ref="pointB"></property> 
+			<property name="pointC" ref="pointC"></property> -->
+	</bean>
+
+	<bean id="circle" class="com.kiran.di.Circle">
+
+	</bean>
+
+
+	<bean id="pointA" class="com.kiran.di.Point">
+		<property name="x" value="10" />
+		<property name="y" value="0" />
+	</bean>
+
+	<bean id="pointB" class="com.kiran.di.Point">
+		<property name="x" value="0" />
+		<property name="y" value="-20" />
+	</bean>
+
+	<bean id="pointC" class="com.kiran.di.Point">
+		<property name="x" value="-20" />
+		<property name="y" value="0" />
+	</bean>
+</beans>

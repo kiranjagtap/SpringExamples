@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context.xsd">
+<context:property-placeholder location="classpath:application.properties" />
+<bean id="triangle" class="com.mypac.main.Triangle">
+	<property name="type" value="Right angle" />
+	
+	<property name="points">
+		<list>
+		<ref bean="pointA"/>
+		<ref bean="pointB"/>
+		<ref bean="pointC"/>
+		</list>
+	</property>
+	<!-- 
+	<property name="pointA" ref="pointA"></property>
+	
+	<property name="pointB" ref="pointB"></property>
+	
+	<property name="pointC" ref="pointC"></property> -->
+</bean>
+
+<bean id="circle" class="com.mypac.main.Circle">
+
+</bean>
+
+<bean class="com.mypac.main.MyBeanFacotry" />
+
+
+<bean id="pointA" class="com.mypac.main.Point">
+	<property name="x" value="0" />
+	<property name="y" value="0" />
+</bean>
+
+<bean id="pointB" class="com.mypac.main.Point">
+	<property name="x" value="0" />
+	<property name="y" value="-20" />
+</bean>
+
+<bean id="pointC" class="com.mypac.main.Point">
+	<property name="x" value="-20" />
+	<property name="y" value="0" />
+</bean>
+</beans>

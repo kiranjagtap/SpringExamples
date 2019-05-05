@@ -1,0 +1,12 @@
+package com.sort.algorithm;
+
+public class QuickSortAlgorithm implements SortAlgorithm {
+
+	@Override
+	public int[] sort(int[] numbers) {
+		
+		System.out.println("quickSortAlgorith");
+		return numbers;
+	}
+
+}

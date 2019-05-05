@@ -1,0 +1,14 @@
+content_assist_disabled_computers=org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.recommenders.calls.rcp.proposalCategory.templates\u0000org.eclipse.mylyn.java.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.recommenders.chain.rcp.proposalCategory.chain\u0000
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="com.mypac.main.Shape"><rhs name\="com.mypac.main.Triangle"/></lhs><lhs name\="com.mypac.main.Triangle"><rhs name\="com.mypac.main.Triangle"/></lhs><lhs name\="com.mypac.main.Drawing"><rhs name\="com.mypac.main.Drawing"/></lhs><lhs name\="org.springframework.beans.factory.BeanFactory"><rhs name\="org.springframework.context.support.ClassPathXmlApplicationContext"/><rhs name\="org.springframework.beans.factory.xml.XmlBeanFactory"/></lhs><lhs name\="org.springframework.core.io.InputStreamSource"><rhs name\="org.springframework.core.io.FileSystemResource"/></lhs><lhs name\="org.springframework.core.io.Resource"><rhs name\="org.springframework.core.io.FileSystemResource"/></lhs><lhs name\="com.kiran.di.Triangle"><rhs name\="com.kiran.di.Triangle"/></lhs><lhs name\="com.kiran.di.DrawingClass"><rhs name\="com.kiran.di.DrawingClass"/></lhs><lhs name\="com.kiran.di.Shape"><rhs name\="com.kiran.di.Triangle"/></lhs><lhs name\="com.kiran.di.Point"><rhs name\="com.kiran.di.Point"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="java.util.Locale"/></lhs><lhs name\="org.springframework.context.ApplicationEvent"><rhs name\="com.kiran.di.DrawEvent"/></lhs><lhs name\="java.util.EventObject"><rhs name\="com.kiran.di.DrawEvent"/></lhs><lhs name\="com.kiran.di.DrawEvent"><rhs name\="com.kiran.di.DrawEvent"/></lhs><lhs name\="com.sort.algorithm.BinarySearchImpl"><rhs name\="com.sort.algorithm.BinarySearchImpl"/></lhs></history>
+content_assist_number_of_computers=24
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+org.eclipse.jdt.ui.formatterprofiles.version=13
+org.eclipse.jdt.ui.text.code_templates_migrated=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.templates_migrated=true
+spelling_locale_initialized=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Main.java&apos; to &apos;HelloSpring/src/com.mypack.collection&apos;&#x0D;&#x0A;- Original project: &apos;HelloSpring&apos;&#x0D;&#x0A;- Destination element: &apos;HelloSpring/src/com.mypack.collection&apos;&#x0D;&#x0A;- Original element: &apos;com.mypac.main.Main.java&apos;" description="Copy compilation unit" destination="/src&lt;com.mypack.collection" element1="/src&lt;com.mypac.main{Main.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1556663024598" units="1" version="1.0"/>
+</session>

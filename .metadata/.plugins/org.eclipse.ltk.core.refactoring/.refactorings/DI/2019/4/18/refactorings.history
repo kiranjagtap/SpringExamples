@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Point.java&apos; to &apos;HelloSpring/src/com.mypac.main&apos;&#x0D;&#x0A;- Original project: &apos;DI&apos;&#x0D;&#x0A;- Destination element: &apos;HelloSpring/src/com.mypac.main&apos;&#x0D;&#x0A;- Original element: &apos;com.kiran.di.Point.java&apos;" description="Copy compilation unit" destination="=HelloSpring/src&lt;com.mypac.main" element1="/src&lt;com.kiran.di{Point.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1556662975137" units="1" version="1.0"/>
+</session>

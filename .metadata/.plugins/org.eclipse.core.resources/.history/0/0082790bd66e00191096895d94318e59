@@ -1,0 +1,20 @@
+package scope;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class PersonDao {
+
+	JdbcConnection jdbcConnection;
+
+	public JdbcConnection getJdbcConnection() {
+		return jdbcConnection;
+	}
+
+	public void setJdbcConnection(JdbcConnection jdbcConnection) {
+		this.jdbcConnection = jdbcConnection;
+	}
+	
+	
+	
+}

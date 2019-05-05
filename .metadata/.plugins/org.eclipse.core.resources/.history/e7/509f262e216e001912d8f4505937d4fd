@@ -1,0 +1,70 @@
+package com.kiran.di;
+
+public class Triangle implements Shape{
+	
+	Point pointA;
+	Point pointB;
+	Point pointC;
+	
+	
+	/*public Point getPointA() {
+		return pointA;
+	}
+
+	public void setPointA(Point pointA) {
+		this.pointA = pointA;
+	}
+
+	public Point getPointB() {
+		return pointB;
+	}
+
+	public void setPointB(Point pointB) {
+		this.pointB = pointB;
+	}
+
+	public Point getPointC() {
+		return pointC;
+	}
+
+	public void setPointC(Point pointC) {
+		this.pointC = pointC;
+	}
+
+
+*/	
+	private int value;
+	private String type;
+	
+
+	
+
+
+	public Triangle(String type) {
+		super();
+		this.type = type;
+	}
+
+
+
+
+
+	public Triangle(int value, String type) {
+		super();
+		this.value = value;
+		this.type = type;
+	}
+
+
+
+
+
+	public void draw() {
+
+		System.out.println("Drawing "+type+" type with value "+value);
+		/*		System.out.println("PointA"+"("+getPointA().getX()+","+getPointA().getY()+")");
+		System.out.println("PointB"+"("+getPointB().getX()+","+getPointB().getY()+")");
+		System.out.println("PointC"+"("+getPointC().getX()+","+getPointC().getY()+")");
+*/		
+	}
+}

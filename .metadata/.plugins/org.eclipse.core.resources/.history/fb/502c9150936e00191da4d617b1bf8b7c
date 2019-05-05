@@ -1,0 +1,36 @@
+package com.kiran.di;
+
+import javax.annotation.Resource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+public class Circle implements Shape{
+
+	private Point center;
+	
+
+	public Point getCenter() {
+		return center;
+	}
+
+//	@Autowired
+	//@Qualifier(value="circleRelated")
+	@Resource(name="pointC")
+	public void setCenter(Point center) {
+		this.center = center;
+	}
+
+
+	public void initCircle() {
+		System.out.println("Initialize Circle");
+	}
+	
+	public void destroyCircle() {
+		System.out.println("Destroying Circle");
+	}
+	public void draw() {
+		System.out.println("Drawing Circle");
+		System.out.println("Circle point is:("+center.getX()+", "+ center.getY()+")");
+	}
+}

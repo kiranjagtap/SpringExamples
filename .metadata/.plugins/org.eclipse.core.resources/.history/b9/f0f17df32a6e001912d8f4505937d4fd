@@ -1,0 +1,66 @@
+package com.kiran.di;
+
+import java.util.List;
+import java.util.function.Consumer;
+
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.BeanFactoryAware;
+import org.springframework.beans.factory.BeanNameAware;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+
+public class Triangle implements ApplicationContextAware,BeanNameAware,BeanFactoryAware, Shape{
+	
+	ApplicationContext context;
+	List<Point> points;
+	
+	
+	public List<Point> getPoints() {
+		return points;
+	}
+
+
+	public void setPoints(List<Point> points) {
+		this.points = points;
+	}
+
+	public void draw() {
+		points.forEach(new Consumer<Point>(){
+					
+					@Override
+					public void accept(Point point) {
+						System.out.println("PointA"+"("+point.getX()+","+point.getY()+")");
+					}									
+		});
+	}
+
+
+	@Override
+	public void setApplicationContext(ApplicationContext context) throws BeansException {
+		this.context = context;
+		System.out.println("context initialize "+context.getApplicationName());
+		
+	}
+
+
+	@Override
+	public void setBeanName(String name) {
+		System.out.println("Bean name is "+name);
+	}
+
+
+	@Override
+	public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	public void draw() {
+		System.out.println("PointA"+"("+getPointA().getX()+","+getPointA().getY()+")");
+		System.out.println("PointB"+"("+getPointB().getX()+","+getPointB().getY()+")");
+		System.out.println("PointC"+"("+getPointC().getX()+","+getPointC().getY()+")");
+		
+	}
+}

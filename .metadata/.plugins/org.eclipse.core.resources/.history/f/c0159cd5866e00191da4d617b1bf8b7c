@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans default-init-method="myInit"
+	default-destroy-method="destroy">
+	<bean id="child" class="com.kiran.di.Triangle">
+		<property name="pointA" ref="pointA" />
+		<property name="pointB" ref="pointB" />
+		<property name="pointC" ref="pointC" />
+
+	</bean>
+
+<bean class="com.kiran.di.MyBeanFacory" />
+
+	<bean id="circle" class="com.kiran.di.Circle" >
+	</bean>
+
+	<bean id="pointA" class="com.kiran.di.Point">
+		<property name="x" value="${pointA.pointX}" />
+	<property name="y" value="${pointA.pointY}" />
+	</bean>
+
+	<bean id="pointB" class="com.kiran.di.Point">
+		<property name="x" value="0" />
+		<property name="y" value="-20" />
+	</bean>
+
+	<bean id="pointC" class="com.kiran.di.Point">
+		<property name="x" value="-20" />
+		<property name="y" value="0" />
+	</bean>
+	
+	<!-- <bean class="com.mypac.main.MyBeanFacotry" /> -->
+<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" >
+ <property name="locations" value="application.properties"></property>
+</bean>
+</beans>
