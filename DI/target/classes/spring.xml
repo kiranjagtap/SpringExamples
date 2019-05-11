@@ -36,10 +36,10 @@
 		<property name="y" value="0" />
 	</bean>
 	<!-- <bean class="com.mypac.main.MyBeanFacotry" /> -->
-	<bean
+<!-- 	<bean
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<property name="locations" value="application.properties"></property>
-	</bean>
+	</bean> -->
 
 	<bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"></bean>
 	

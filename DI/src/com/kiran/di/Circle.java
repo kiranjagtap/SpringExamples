@@ -59,7 +59,7 @@ public class Circle implements Shape, ApplicationEventPublisherAware{
 		
 		System.out.println(this.messageSource.getMessage("text", null, "Default message", null));
 		System.out.println(this.messageSource.getMessage("drawing.circle", null, "Default message", null));
-		System.out.println(this.messageSource.getMessage("drawing.point", new Object[] {center.getX(),center.getY()}, "Default point message", null));
+		System.out.println(this.messageSource.getMessage("drawing.point", new Object[] {center.getX(),center.getY(),}, "Default point message", null));
 		publisher.publishEvent(drawEvent);
 	}
 

@@ -5,8 +5,8 @@ import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope(scopeName="prototype")
-//@Scope(proxyMode=ScopedProxyMode.TARGET_CLASS,scopeName="prototype")
+//@Scope(scopeName="prototype")
+@Scope(scopeName="prototype", proxyMode=ScopedProxyMode.TARGET_CLASS)
 public class JdbcConnection {
 
 	public JdbcConnection() {
